@@ -1,4 +1,3 @@
-#include <Arduino.h> 
 #ifndef Thermometer_h
 #define Thermometer_h
 
