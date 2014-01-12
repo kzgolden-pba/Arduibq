@@ -3,7 +3,7 @@
 #include "Bellows.h"
 Thermometer thermometer(1);
 Screen screen;
-Bellows bellows(screen, 85);
+Bellows bellows(screen, 225);
 void setup(){ 
 }
 void loop(){
