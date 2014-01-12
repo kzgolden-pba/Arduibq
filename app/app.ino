@@ -1,12 +1,13 @@
 #include "Thermometer.h"
 #include "Screen.h"
+#include "Bellows.h"
 Thermometer thermometer(1);
 Screen screen;
+Bellows bellows(screen, 85);
 void setup(){ 
 }
 void loop(){
     screen.setTemperatureDisplay(thermometer.getTemperature());
-    delay(1000);
-    screen.setFanPctDisplay(100);
-	delay(1000);
+    bellows.pulse(thermometer.getTemperature());
+	delay(6000);
 }
