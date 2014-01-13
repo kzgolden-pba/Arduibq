@@ -1,5 +1,2 @@
-Arduibq
-=======
-
-Arduino Controlled BBQ Bellows
-------------------------------
+Arduibq: Arduino Controlled BBQ Bellows
+=======================================
