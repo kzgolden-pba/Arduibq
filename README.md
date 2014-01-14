@@ -1,4 +1,4 @@
-Arduibq
+ArduiBQ
 =======
 
 Author
@@ -14,7 +14,9 @@ This project is licensed under a standard MIT license. See the License file for 
 About
 -----
 
-Arduibq is an arduino based, automated bbq bellows that regulates air to the bbq firebox in order to maintain a target temperature in the pit. It is a lot more simplistic in design and electronics than some much more extensive projects out there, such as the [heatermeter] (https://github.com/CapnBry/HeaterMeter/wiki) which incorporates many more features, including a raspberry pi for web-based reporting. The goal of Arduibq is to simply provide the ability to control the bbq pit temperature within reasonable parameters while requiring as few hardware and electronic components as possible.
+ArduiBQ is an arduino based, automated bbq bellows that regulates air to the bbq firebox in order to maintain a target temperature in the pit. It is a lot more simplistic in design and electronics than some much more extensive projects out there, such as the [heatermeter] (https://github.com/CapnBry/HeaterMeter/wiki) which incorporates many more features, including a raspberry pi for web-based reporting. 
+
+Instead of providing a feature rich solution, the goal of ArduiBQ is to simply provide the ability to control the bbq pit temperature within reasonable parameters while requiring as few hardware and electronic components as possible.
 
 General Parts Required
 ----------------------
