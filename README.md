@@ -30,6 +30,10 @@ General Parts Required
   9. 12v Power supply for arduino
   10. An electronics project case (Recommended)
   11. The [Sainsmart LCD shield](http://www.amazon.com/SainSmart-Keypad-Arduino-Mega2560-Duemilanove/dp/B006OVYI1G)
+  12. Arduino UNO
+  13. Jumper Wires
+  14. Solder
+  15. Soldering Iron
   
 Schematic Notes
 ---------------
