@@ -4,7 +4,7 @@ Arduibq
 Author
 ------
 
-kcgolden (github)
+Kelsey Golden, kcgolden (github)
 
 License
 -------
