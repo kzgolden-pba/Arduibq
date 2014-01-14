@@ -31,14 +31,17 @@ General Parts Required
   10. An electronics project case (Recommended)
   11. The [Sainsmart LCD shield](http://www.amazon.com/SainSmart-Keypad-Arduino-Mega2560-Duemilanove/dp/B006OVYI1G)
   12. Arduino UNO
-  13. Jumper Wires
-  14. Solder
-  15. Soldering Iron
+  13. Protoype Breadboard
+  14. Solderless Breadboard (Recommended)
+  15. Jumper Wires
+  16. Solder
+  17. Soldering Iron
+  18. Soldering Clamp (Recommended)
   
 Schematic Notes
 ---------------
 
-I'm not really an electronics guy and not that interested in figuring out schematic software, allthough I'm sure it's easy enough. I'll instead describe the assembly in plain enough english/pseudo schematic below:
+I'm not really an electronics guy and not that interested in figuring out schematic software, allthough I'm sure it's easy enough. I'll instead describe the assembly in plain enough english/pseudo schematic below. Please be sure to verify everything is working with a solderless breadboard before going to something more permanent.
 
 ### The Thermometer Input Circuit:
 5v Arduino Pin -> 1 M Ohm Resistor -> (Probe +/Arduino Analog Input Pin #1/10uF Capacitor +) -> (Probe -/Capacitor -) -> GRND
