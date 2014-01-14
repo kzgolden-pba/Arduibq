@@ -52,7 +52,7 @@ There may be a better electronics design and you're welcome to whatever. The sof
 Attaching the blower to your pit
 --------------------------------
 
-The blower goes whereever your damper goes. There are a number of different ways to attach it and you'll have to get creative or use google for ideas. Roof Flashing makes a good material to work with and remember that heat melts plastic so it would be good to keep your fan far enough away from the fire to keep it from melting.
+The blower goes whereever your damper goes. There are a number of different ways to attach it and you'll have to get creative or use google for ideas. Roof Flashing makes a good material to work with and remember that heat melts plastic so it would be good to keep your fan far enough away from the fire to keep it from melting. Also make sure that the fan is the only source of air for the fire, sealing all but the chimney of the smoker as best you can for best results.
 
 Results to Expect/Hope For
 --------------------------
