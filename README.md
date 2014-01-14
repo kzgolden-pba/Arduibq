@@ -18,6 +18,11 @@ ArduiBQ is an arduino based, automated bbq bellows that regulates air to the bbq
 
 Instead of providing a feature rich solution, the goal of ArduiBQ is to simply provide the ability to control the bbq pit temperature within reasonable parameters while requiring as few hardware and electronic components as possible.
 
+Software Install
+----------------
+
+  The arduino sketch and classes are in the app/ dir. Install using any Arduino IDE. If using the native Arduino IDE, you may need to manually add the header/cpp files in order to upload them to your arduino.
+
 General Parts Required
 ----------------------
 
