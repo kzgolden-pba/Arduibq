@@ -9,5 +9,5 @@ void setup(){
 void loop(){
     screen.setTemperatureDisplay(thermometer.getTemperature());
     bellows.pulse(thermometer.getTemperature());
-	delay(6000);
+	delay(1000);
 }

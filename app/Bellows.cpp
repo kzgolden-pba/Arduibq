@@ -4,40 +4,27 @@
 Bellows::Bellows(Screen screen, int targetTemperature){
 	pinMode(2,OUTPUT);
 	_screen = screen;
-	_fanPct  = 100;
-	_pulseCount = 1;
+	_previousTemp = 0;
 	this->setTargetTemperature(targetTemperature);
 }
 void Bellows::setTargetTemperature(int targetTemperature){
 	_targetTemperature = targetTemperature;
 	_screen.setTargetTemperatureDisplay(targetTemperature);
 }
+bool Bellows::_trendingUpAndClose(int currentTemp) {
+	if(currentTemp > _targetTemperature - 5 && currentTemp > _previousTemp) {
+		return true;
+	}
+	return false;
+}
 void Bellows::pulse(int currentTemp){
-	_setFanPct(currentTemp);
-	if(_pulseCount * 10 > _fanPct) {
+	if(currentTemp >= _targetTemperature || _trendingUpAndClose(currentTemp)) {
 		_turnOffFan();
-	} else {
+	}
+	else if (currentTemp < _targetTemperature - 5) {
 		_turnOnFan();
 	}
-	_setPulseCount();
-}
-void Bellows::_setPulseCount() {
-	_screen.setPulseDisplay(_pulseCount);
-	if(_pulseCount < 10) {
-		_pulseCount = _pulseCount + 1;
-	}
-	else {
-		_pulseCount = 1;
-	}
-}
-void Bellows::_setFanPct(int currentTemp){
-	if(currentTemp > _targetTemperature && _fanPct >= 10) {
-		_fanPct = _fanPct - 10;
-	}
-	else if (currentTemp < _targetTemperature && _fanPct < 100) {
-		_fanPct = _fanPct + 10;
-	}
-	_screen.setFanPctDisplay(_fanPct);
+	_previousTemp = currentTemp;
 }
 void Bellows::_turnOnFan(){
 	digitalWrite(2,HIGH);
