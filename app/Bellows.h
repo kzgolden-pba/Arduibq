@@ -7,13 +7,11 @@ class Bellows {
 		void setTargetTemperature(int targetTemp);
 		void pulse(int currentTemp);
 	private:
-		void _setFanPct(int currentTemp);
-		void _setPulseCount();
 		void _turnOnFan();
 		void _turnOffFan();
-		int _pulseCount;
+		bool _trendingUpAndClose(int currentTemp);
 		int _targetTemperature;
-		int _fanPct;
+		int _previousTemp;
 		Screen _screen;
 };
 #endif
