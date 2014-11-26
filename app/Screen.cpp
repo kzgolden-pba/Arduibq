@@ -5,6 +5,13 @@ Screen::Screen() : _lcd(8, 13, 9, 4, 5, 6, 7) {
 	_lcd.clear();
 	_lcd.begin(16, 2);
 }
+int Screen::checkButtonPressed() {
+	int adc_key_in = 0;
+	adc_key_in = analogRead(0);
+	if (adc_key_in > 1000) return 0;
+	if (adc_key_in < 50)   return 1;
+	if (adc_key_in < 650)  return 2;
+}
 void Screen::setTemperatureDisplay(int temp) {
 	this->_scrub(0,0,7);
 	_lcd.print("Pit:" + (String) temp);
