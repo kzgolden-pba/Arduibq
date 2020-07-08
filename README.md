@@ -48,7 +48,7 @@ General Parts Required
 Schematic Notes
 ---------------
 
-I'm not really an electronics guy and not that interested in figuring out schematic software, allthough I'm sure it's easy enough. I'll instead describe the assembly in plain enough english/pseudo schematic below. Please be sure to verify everything is working with a solderless breadboard before going to something more permanent.
+I'm not really an electronics person and not that interested in figuring out schematic software, allthough I'm sure it's easy enough. I'll instead describe the assembly in plain enough english/pseudo schematic below. Please be sure to verify everything is working with a solderless breadboard before going to something more permanent.
 
 ### The Thermometer Input Circuit:
 5v Arduino Pin -> 1 M Ohm Resistor -> (Probe +/Arduino Analog Input Pin #1/10uF Capacitor +) -> (Probe -/Capacitor -) -> GRND
